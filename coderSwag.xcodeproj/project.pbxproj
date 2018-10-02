@@ -12,6 +12,7 @@
 		3D9DDA1C2163E3A500AAE71A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DDA1A2163E3A500AAE71A /* Main.storyboard */; };
 		3D9DDA1E2163E3A500AAE71A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DDA1D2163E3A500AAE71A /* Assets.xcassets */; };
 		3D9DDA212163E3A500AAE71A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9DDA1F2163E3A500AAE71A /* LaunchScreen.storyboard */; };
+		3D9DDA2E2164210100AAE71A /* CategoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9DDA2D2164210100AAE71A /* CategoryCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		3D9DDA1D2163E3A500AAE71A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D9DDA202163E3A500AAE71A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D9DDA222163E3A500AAE71A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9DDA2D2164210100AAE71A /* CategoryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,6 @@
 				3D9DDA2B2163EA8600AAE71A /* View */,
 				3D9DDA2A2163EA8300AAE71A /* Controller */,
 				3D9DDA162163E3A500AAE71A /* AppDelegate.swift */,
-				3D9DDA182163E3A500AAE71A /* CategoriesVC.swift */,
 				3D9DDA1A2163E3A500AAE71A /* Main.storyboard */,
 				3D9DDA1D2163E3A500AAE71A /* Assets.xcassets */,
 				3D9DDA1F2163E3A500AAE71A /* LaunchScreen.storyboard */,
@@ -70,6 +71,7 @@
 		3D9DDA2A2163EA8300AAE71A /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				3D9DDA182163E3A500AAE71A /* CategoriesVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -77,6 +79,7 @@
 		3D9DDA2B2163EA8600AAE71A /* View */ = {
 			isa = PBXGroup;
 			children = (
+				3D9DDA2D2164210100AAE71A /* CategoryCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -161,6 +164,7 @@
 			files = (
 				3D9DDA192163E3A500AAE71A /* CategoriesVC.swift in Sources */,
 				3D9DDA172163E3A500AAE71A /* AppDelegate.swift in Sources */,
+				3D9DDA2E2164210100AAE71A /* CategoryCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

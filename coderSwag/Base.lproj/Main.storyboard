@@ -30,7 +30,7 @@
                                 <rect key="frame" x="0.0" y="71" width="375" height="532"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="3Pe-D5-Qxd">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="136" id="3Pe-D5-Qxd" customClass="CategoryCell" customModule="coderSwag" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="136"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="3Pe-D5-Qxd" id="dGT-5t-fwA">
@@ -60,6 +60,10 @@
                                                 <constraint firstItem="pjU-go-Gya" firstAttribute="centerX" secondItem="dGT-5t-fwA" secondAttribute="centerX" id="tfu-to-Dfb"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="categoryImage" destination="fDm-YY-PXk" id="RCv-Xp-ARb"/>
+                                            <outlet property="categoryTitle" destination="pjU-go-Gya" id="y21-RT-LNL"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -75,6 +79,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CODER SWAG" id="Lpa-wH-D98"/>
+                    <connections>
+                        <outlet property="categoryTable" destination="HmX-Qr-1sM" id="kBz-au-MRd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
