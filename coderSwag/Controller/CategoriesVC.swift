@@ -8,8 +8,8 @@
 
 import UIKit
 
-class CategoriesVC: UIViewController {
-
+class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate {
+   
     @IBOutlet weak var categoryTable: UITableView!
     
     override func viewDidLoad() {
@@ -18,4 +18,11 @@ class CategoriesVC: UIViewController {
       
     }
     
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        <#code#>
+    }
 }
