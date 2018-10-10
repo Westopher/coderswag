@@ -45,4 +45,35 @@ import Foundation
     func getCategories() -> [Category] {
         return categories
     }
+        func getProducts (forCategoryTitle title: String) -> [Product] {
+            switch title {
+            case "SHIRTS":
+                return getShirts()
+            case "HATS":
+                return getHats()
+            case "HOODIES":
+                return getHoodies()
+            case "DIGITAL":
+                return getDigitalGoods()
+            default:
+                return getShirts()
+            }
+        }
+    
+    func getHats() -> [Product] {
+        return hats
+    }
+    
+    func getHoodies() -> [Product] {
+        return hoodies
+    }
+    
+    func getShirts() -> [Product] {
+        return shirts
+    }
+    
+    func getDigitalGoods() -> [Product] {
+        return digitalGoods
+    }
+    
  }
