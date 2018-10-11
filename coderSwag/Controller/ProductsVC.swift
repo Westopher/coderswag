@@ -10,12 +10,15 @@ import UIKit
 
 class ProductsVC: UIViewController {
 
+    private(set) public var products = [Product]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
     }
     
-    func initProducts 
+    func initProducts(category: Category) {
+        products = DataService.instance.getProducts(forCategoryTitle: category.title)
+    }
     
 
 }
