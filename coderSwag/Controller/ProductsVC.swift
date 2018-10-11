@@ -10,8 +10,7 @@ import UIKit
 
 class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
   
-    
-    
+    @IBOutlet weak var productsCollection: UICollectionView!
     
     private(set) public var products = [Product]()
     
@@ -22,9 +21,10 @@ class ProductsVC: UIViewController, UICollectionViewDelegate, UICollectionViewDa
         
     
     }
-    @IBOutlet weak var productsCollection: UICollectionView!
+    
     func initProducts(category: Category) {
         products = DataService.instance.getProducts(forCategoryTitle: category.title)
+        navigationItem.title = category.title
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

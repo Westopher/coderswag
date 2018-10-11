@@ -182,6 +182,9 @@
                             <constraint firstAttribute="trailing" secondItem="AGG-Dp-wSU" secondAttribute="trailing" id="pzE-jU-1SE"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="productsCollection" destination="AGG-Dp-wSU" id="nqE-eE-lcT"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BfJ-Yn-U6V" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
