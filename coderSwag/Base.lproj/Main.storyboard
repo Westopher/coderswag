@@ -88,10 +88,10 @@
             </objects>
             <point key="canvasLocation" x="716" y="116.49175412293854"/>
         </scene>
-        <!--View Controller-->
+        <!--ProductsVC-->
         <scene sceneID="I3v-gg-BTx">
             <objects>
-                <viewController id="MnH-2f-fIW" sceneMemberID="viewController">
+                <viewController id="MnH-2f-fIW" customClass="ProductsVC" customModule="coderSwag" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="sYS-ZY-RjR"/>
                         <viewControllerLayoutGuide type="bottom" id="wpO-gM-HlX"/>
