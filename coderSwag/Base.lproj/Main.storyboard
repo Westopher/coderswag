@@ -81,7 +81,7 @@
                     <navigationItem key="navigationItem" title="CODER SWAG" id="Lpa-wH-D98"/>
                     <connections>
                         <outlet property="categoryTable" destination="HmX-Qr-1sM" id="kBz-au-MRd"/>
-                        <segue destination="MnH-2f-fIW" kind="show" id="QeD-Wz-0hP"/>
+                        <segue destination="MnH-2f-fIW" kind="show" identifier="ProductsVC" id="QeD-Wz-0hP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
