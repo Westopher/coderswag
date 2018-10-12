@@ -35,10 +35,17 @@ class CategoriesVC: UIViewController, UITableViewDataSource, UITableViewDelegate
             let category = DataService.instance.getCategories()[indexPath.row]
             performSegue(withIdentifier: "ProductsVC", sender: category)
     }
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let productsVC = segue.destination as? ProductsVC {
+            let barBtn = UIBarButtonItem()
+            navigationItem.backBarButtonItem = barBtn
+            barBtn.title = ""
+            
             assert(sender as? Category != nil)
             productsVC.initProducts(category: sender as! Category)
         }
+        
+        
     }
 }
